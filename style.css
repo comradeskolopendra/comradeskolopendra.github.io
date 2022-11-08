@@ -9,7 +9,8 @@ body {
     height: 70px;
     position: sticky;
     top: 0;
-    background: #000;
+    background: #fff;
+    box-shadow: 0 10px 10px blue;
 }
 
 .filters__wrapper {
