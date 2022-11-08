@@ -21,8 +21,22 @@ body {
     height: 70px;
     position: sticky;
     justify-content: center;
-    background: red;
+    background: #fff;
     top: 70px;
+}
+
+.filter {
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 18px;
+    border: 1px solid #C1D5F3;
+    margin-right: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 15px 20px;
 }
 
 .content {
@@ -33,10 +47,19 @@ body {
 
 .filter__inner {
     display: flex;
-    justify-content: space-between;
+    max-width: 1240px;
+    align-items: center;
+    justify-content: center;
 }
 
 .test {
     background: teal;
     height: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+    .filter__inner {
+        width: 100%;
+        overflow-x: auto;
+    }
 }
